@@ -45,6 +45,37 @@ export const DiscordIcon: React.FC<IconSvgProps> = ({
   );
 };
 
+
+export const UserIcon: React.FC<IconSvgProps> = ({
+  size = 24,
+  width,
+  height,
+  ...props
+}) => {
+  return (
+    <svg
+      height={size || height}
+      width={size || width}
+      viewBox="0 20 60.671 15.671"
+      {...props}
+    >
+      <g>
+        <ellipse 
+          cx="30.336" 
+          cy="12.097" 
+          rx="11.997" 
+          ry="12.097" 
+          fill="currentColor"
+        />
+        <path
+          d="M35.64,30.079H25.031c-7.021,0-12.714,5.739-12.714,12.821v17.771h36.037V42.9C48.354,35.818,42.661,30.079,35.64,30.079z"
+          fill="currentColor"
+        />
+      </g>
+    </svg>
+  );
+};
+
 export const TwitterIcon: React.FC<IconSvgProps> = ({
   size = 24,
   width,
