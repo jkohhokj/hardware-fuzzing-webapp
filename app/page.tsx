@@ -47,6 +47,13 @@ export default function Home() {
               linkText="Publication Source"
             />
             <CustomCard
+              title="(ChatFuzz) Beyond Random Inputs: A Novel ML-Based Hardware Fuzzing"
+              subtitle="Rostami 2024"
+              bodyText="Large Language Model guided input generation"
+              linkHref="https://ieeexplore.ieee.org/document/10546625"
+              linkText="Publication Source"
+            />
+            <CustomCard
               title="MABFuzz: Multi-Armed Bandit Algorithms"
               subtitle="Gohil, Kande 2024"
               bodyText="Dynamic search space coverage with Multi-Armed Bandits"
@@ -60,6 +67,20 @@ export default function Home() {
               linkHref="https://www.usenix.org/system/files/usenixsecurity24-borkar.pdf"
               linkText="Publication Source"
             />
+            <CustomCard
+              title="GenHuzz: An Efficient Generative Hardware Fuzzer"
+              subtitle="Wu 2025"
+              bodyText="Reinforcement Learning based test instruction generation"
+              linkHref="http://usenix.org/system/files/conference/usenixsecurity25/sec25cycle1-prepub-1307-wu-lichao.pdf"
+              linkText="Publication Source"
+            />
+            <CustomCard
+              title="RLFuzz: Accelerating Hardware Fuzzing with Deep Reinforcement Learning"
+              subtitle="Götz 2025"
+              bodyText="Reinforcement Learning based test instruction mutation"
+              linkHref="https://ieeexplore.ieee.org/abstract/document/11050051"
+              linkText="Publication Source"
+            />
           </div>
           <Divider className="my-4" />
           <br />
@@ -71,6 +92,20 @@ export default function Home() {
               subtitle="Solt 2024"
               bodyText="Better test instructions to improve fuzzing efficiency."
               linkHref="https://www.usenix.org/system/files/usenixsecurity24-solt.pdf"
+              linkText="Publication Source"
+            />
+            <CustomCard
+              title="MorFuzz: Fuzzing Processor via Runtime Instruction Morphing enhanced Synchronizable Co-simulation"
+              subtitle="Xu, Liu 2023"
+              bodyText="Better instruction mutation via dynamic runtime primitives"
+              linkHref="https://www.usenix.org/system/files/usenixsecurity23-xu-jinyan.pdf"
+              linkText="Publication Source"
+            />
+            <CustomCard
+              title="ProcessorFuzz: Processor Fuzzing with Control and Status Registers Guidance"
+              subtitle="Canakci 2023"
+              bodyText="Better instruction mutation with Control and Status Registers coverage metrics"
+              linkHref="https://ieeexplore.ieee.org/document/10133714"
               linkText="Publication Source"
             />
           </div>
@@ -107,26 +142,6 @@ export default function Home() {
           <Divider className="my-4" />
           <br />
           <br />
-          <h3 className={subtitle()}>Related Platforms</h3>
-          <div className="gap-4 grid grid-cols-3">
-            <CustomCard
-              title="SiFive Platform"
-              subtitle="Commercial RISC-V Development"
-              bodyText="SiFive uses similar processor integration techinques as Chipyard."
-              linkHref="https://www.sifive.com/documentation"
-              linkText="Resources"
-            />
-            <CustomCard
-              title="HiTek Platform"
-              subtitle="Hardware Design Services"
-              bodyText="No idea"
-              linkHref="https://hiteksys.com/engineering-design-services"
-              linkText="Resources"
-            />
-          </div>
-          <Divider className="my-4" />
-          <br />
-          <br />
           <h3 className={subtitle()}>Relevant Processors</h3>
           <div className="gap-4 grid grid-cols-3">
             <CustomCard
@@ -140,18 +155,6 @@ export default function Home() {
               subtitle="Agile development methodology on high performance RISC-V processors"
               linkText="Source Code"
               linkHref="https://github.com/OpenXiangShan/XiangShan"
-            />
-            <CustomCard
-              title="Shakti C-Class"
-              subtitle="Commercial-grade 5-stage in-order core"
-              linkText="Source Code"
-              linkHref="https://gitlab.com/shaktiproject/cores/c-class"
-            />
-            <CustomCard
-              title="Shakti E-Class"
-              subtitle="Embedded-class 3-stage in-order core"
-              linkText="Source Code"
-              linkHref="https://gitlab.com/shaktiproject/cores/e-class"
             />
             <CustomCard
               title="Superscalar CVA6"
