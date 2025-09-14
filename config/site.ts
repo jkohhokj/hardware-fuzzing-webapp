@@ -1,7 +1,7 @@
 export type SiteConfig = typeof siteConfig;
 
 export const siteConfig = {
-  name: "Hardware Fuzzing Group",
+  name: "TACHS",
   description: "Hardware Fuzzing Projects & Resources",
   navItems: [
     {
