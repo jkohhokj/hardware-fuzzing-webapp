@@ -19,6 +19,82 @@ export default function Home() {
           <Divider className="my-4" />
           <br />
           <br />
+          <h3 className={subtitle()}>Relevant Processors</h3>
+          <div className="gap-4 grid grid-cols-3">
+            <CustomCard
+              title="BOOMv4"
+              subtitle="Berkeley Out of Order Machine"
+              linkText="Source Code"
+              linkHref="https://github.com/riscv-boom/riscv-boom"
+              link2={true}
+              linkText2="Install Guide"
+              linkHref2="https://drive.google.com/drive/u/1/folders/1wfNZXJI6l6B2H_FBuyA_oyT6BGmzlMLX"
+            />
+            <CustomCard
+              title="C910"
+              subtitle="Alibaba's 64-bit high-performance processor: XuanTie C910"
+              linkText="Source Code"
+              linkHref="https://github.com/pulp-platform/cheshire"
+              link2={true}
+              linkText2="Install Guide"
+              linkHref2="https://drive.google.com/drive/u/1/folders/10Z4BwBJ12MVa0BcF_IbOHAqJUadhOyeP"
+            />
+            <CustomCard
+              title="XiangShan"
+              subtitle="Agile development methodology on high performance RISC-V processors"
+              linkText="Source Code"
+              linkHref="https://github.com/OpenXiangShan/XiangShan"
+              link2={true}
+              linkText2="Install Guide"
+              linkHref2="https://drive.google.com/drive/u/1/folders/1QNJv__bJpbaA1iqvFdU1R0K_9M-j9j9B"
+            />
+            <CustomCard
+              title="CVA6s"
+              subtitle="cv32a65x but superscalar"
+              linkText="Source Code"
+              linkHref="https://github.com/openhwgroup/cva6/tree/v5.3.0"
+              link2={true}
+              linkText2="Install Guide"
+              linkHref2="https://drive.google.com/drive/u/1/folders/1x6BM6D0pgmqxkMQYaDmxOv37PU02O556"
+            />
+          </div>
+          <Divider className="my-4" />
+          <br />
+          <br />
+          <h3 className={subtitle()}> Tools Needed for Fuzzing </h3>
+          <div className="gap-4 grid grid-cols-3">
+            <CustomCard
+              title="Chipyard Hardware Development Platform"
+              subtitle="Agile System-on-Chip Platform"
+              bodyText="Chipyard is a development platform that is used by TheHuzz to simulate hardware on software."
+              linkHref="https://chipyard.readthedocs.io/"
+              linkText="Tutorial"
+            />
+            <CustomCard
+              title="RISC-V Toolchain"
+              subtitle="Cross-compiler for RISC-V"
+              bodyText="Used for compiling RISC-V binaries, also includes Spike Golden Reference Model."
+              linkHref="https://github.com/riscv-collab/riscv-gnu-toolchain"
+              linkText="Tutorial"
+            />
+            <CustomCard
+              title="Hardware Simulator/Compiler"
+              subtitle="Run hardware designs on software"
+              bodyText="Tools like VCS and Verilator allow hardware designs to be simulated on software."
+              linkHref=""
+              linkText="Tutorial"
+            />
+            <CustomCard
+              title="TAMU Olympus HPC"
+              subtitle="TAMU ECEN department's High Performance Computing Server"
+              bodyText="Used for running large workloads and commercially licensed products like VCS."
+              linkHref="https://tamuengr.atlassian.net/wiki/spaces/helpdesk/pages/2165145607/Olympus+CPU+Research+User+Information"
+              linkText="Tutorial"
+            />
+          </div>
+          <br />
+          <br />
+          <Divider className="my-4" />
 
           <h3 className={subtitle()}>SETH Hardware Fuzzing Papers</h3>
           <div className="gap-4 grid grid-cols-3">
@@ -107,60 +183,6 @@ export default function Home() {
               bodyText="Better instruction mutation with Control and Status Registers coverage metrics"
               linkHref="https://ieeexplore.ieee.org/document/10133714"
               linkText="Publication Source"
-            />
-          </div>
-          <Divider className="my-4" />
-          <br />
-          <br />
-          <h3 className={subtitle()}> Tools Needed for Fuzzing </h3>
-          <div className="gap-4 grid grid-cols-3">
-            <CustomCard
-              title="Chipyard Hardware Development Platform"
-              subtitle="Agile System-on-Chip Platform"
-              bodyText="Chipyard is a development platform that is used by TheHuzz to simulate hardware on software."
-              linkHref=""
-              linkText="Tutorial"
-            />
-            <CustomCard
-              title="RISC-V Toolchain"
-              subtitle="Cross-compiler for RISC-V"
-              bodyText="Used for compiling RISC-V binaries, also includes Spike Golden Reference Model."
-              linkHref=""
-              linkText="Tutorial"
-            />
-            <CustomCard title="Hardware Simulator/Compiler" subtitle="Run hardware designs on software" bodyText="Tools like VCS and Verilator allow hardware designs to be simulated on software."
-            linkHref=""
-            linkText="Tutorial"/>
-            <CustomCard
-              title="TAMU Olympus HPC"
-              subtitle="TAMU ECEN department's High Performance Computing Server"
-              bodyText="Used for running large workloads and commercially licensed products like VCS."
-              linkHref="https://tamuengr.atlassian.net/wiki/spaces/helpdesk/pages/2165145607/Olympus+CPU+Research+User+Information"
-              linkText="Tutorial"
-            />
-          </div>
-          <Divider className="my-4" />
-          <br />
-          <br />
-          <h3 className={subtitle()}>Relevant Processors</h3>
-          <div className="gap-4 grid grid-cols-3">
-            <CustomCard
-              title="RSD"
-              subtitle="RISC-V Out-of-Order Superscalar Processor"
-              linkText="Source Code"
-              linkHref="https://github.com/rsd-devel/rsd"
-            />
-            <CustomCard
-              title="XiangShan"
-              subtitle="Agile development methodology on high performance RISC-V processors"
-              linkText="Source Code"
-              linkHref="https://github.com/OpenXiangShan/XiangShan"
-            />
-            <CustomCard
-              title="Superscalar CVA6"
-              subtitle="cv32a65x but superscalar"
-              linkText="Source Code"
-              linkHref="https://github.com/openhwgroup/cva6/tree/v5.3.0"
             />
           </div>
         </div>
