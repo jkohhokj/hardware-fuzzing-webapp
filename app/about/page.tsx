@@ -13,25 +13,26 @@ export default function AboutPage() {
         <div>
           <h1 className={title()}>About</h1>
         </div>
-        <div>
-          Hardware vulnerabilities in processors are emerging at an alarming
-          rate while current security measures struggle to keep up. Over my
-          summer internship with{" "}
-          <Link href="https://seth.engr.tamu.edu/">SETH Lab</Link>, I discover 6
-          zero-day hardware vulnerabilities in open-source processors.
-        </div>
-        <br />
-        <br />
+
         <br />
 
         <div>
           This site is a collection of projects and papers related to using
-          hardware fuzzing on processors to find vulnerabilities.
+          hardware fuzzing on processors to find vulnerabilities for the TACHS
+          program.
         </div>
         <div>
           Maintained with caffeine ☕ and love ❤️ by{" "}
           <Link href="https://www.jkoh.dev/">Jayden Koh</Link>.
         </div>
+        <Divider className="my-4" />
+        <Divider className="my-4" />
+        <h2 className="text-2xl">Fall '25 Instructors</h2>
+        <ul>
+          <li>Chen Chen: chenc@tamu.edu</li>
+          <li>Stephen Muttathil: stephen7929@tamu.edu</li>
+          <li>Jayden Koh: jkohhokj@tamu.edu</li>
+        </ul>
       </div>
       <Divider className="my-4" />
     </div>
