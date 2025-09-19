@@ -14,6 +14,14 @@ export default function Home() {
     <section className="flex flex-col items-center justify-center gap-4 py-8 md:py-10">
       <div className="inline-block max-w-full text-center justify-center">
         <div className="max-w-5xl">
+          <h2 className={title()}>Our Mission</h2>
+          <Divider className="my-4" />
+          <br/>
+          <p className={subtitle()}>👨🏻‍💻 Train hardware security students</p>
+          <p className={subtitle()}>🔐 Develop automated tools for hardware security analysis</p>
+          <p className={subtitle()}>🔎 Identifying functional design flaws on SoC's</p>
+          <p className={subtitle()}>💡 Aid community testing and open sourcing</p>
+
           <h2 className={title()}>Research Resources</h2>
           <Divider className="my-4" />
           <Divider className="my-4" />
